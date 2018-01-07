@@ -2,6 +2,9 @@ StartGame<-function(Numb="Single"){
   gameState<-c(1:9)*0
   if(tolower(Numb)=="single"){
   comp<-BeginTTT();
+  pa1<-"Player 1"
+  pa2<-"Player 2"
+  
   if(comp=="Player 1 turn"){
     pa1<-"Player 1"
     pa2<-"Player 2"
@@ -43,6 +46,8 @@ if("" %in% cVec | length(unique(cVec))==1){
     cat("You have not ented your names")
     }
 } else{
+  pa1<-"Player 1"
+  pa2<-"Player 2"
   comp<-BeginTTT();
   if(comp=="Player 1 turn"){
     pa1<-cVec[1]
