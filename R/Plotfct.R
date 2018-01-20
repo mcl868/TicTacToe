@@ -4,7 +4,7 @@ Plotfct<-function(gameState,player1,player2){
   placeY<-c(5/6,1/2,1/6)
   par(mai=c(0.3,0.3,0.3,0.3))
   plot(0,0,col=0,xlab="",ylab="",xlim=c(0,1),ylim=c(0,1),axes = FALSE,main="Tic Tac Toe")
-  legend(0.05,0.1,ncol=2, inset = c(0,0.4) , cex = 1.5, bty = "n",
+  legend(0,0.1,ncol=2, inset = c(0,0.2) , cex = 1.5, bty = "n",
          legend = c(player1,player2), pch = c(4,1))
 
   segments(1/3,0,1/3,1);segments(2/3,0,2/3,1)
