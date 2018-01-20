@@ -16,7 +16,7 @@ StartGame<-function(Numb="Single"){
   if(comp=="Player 1 turn")cat("You are Player Two")
   if(comp=="Player 2 turn")cat("You are Player One")
   if(comp=="Player 1 turn")gameState[7]<-1
-  Plotfct(gameState,player1=comp,player2=pa2)
+  Plotfct(gameState,player1=pa2,player2=pa2)
   for(jj in 1:100){
     if(evaluateGameState(gameState)==0 |!evaluateGameState(gameState)==42){
       if(jj==100){
