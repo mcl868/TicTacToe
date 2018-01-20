@@ -2,15 +2,12 @@ StartGame<-function(Numb="Single"){
   gameState<-c(1:9)*0
   if(tolower(Numb)=="single"){
   comp<-BeginTTT();
-  pa1<-"Player 1"
-  pa2<-"Player 2"
-  
-  if(comp=="Player 1 turn"){
-    pa1<-"Player 1"
+  if(comp=="Player 2 turn"){
+    pa1<-"You"
     pa2<-"Player 2"
   } else {
-    pa1<-"Player 2"
-    pa2<-"Player 1"
+    pa1<-"Player 1"
+    pa2<-"You"
   }
 
   if(comp=="Player 1 turn")cat("You are Player Two")
