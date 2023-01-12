@@ -17,8 +17,8 @@ StartGame<-function(Numb="Single"){
   for(jj in 1:100){
     if(evaluateGameState(gameState)==0 |!evaluateGameState(gameState)==42){
       if(jj==100){
-        if(evaluateGameState(gameState)==1)vari<-paste("Player 1 win")
-        if(evaluateGameState(gameState)==-1)vari<-paste("Player 2 win")
+        if(evaluateGameState(gameState)==1)vari<-paste("Player 1 win (", pa1,")")
+        if(evaluateGameState(gameState)==-1)vari<-paste("Player 2 win (", pa2,")")
         if(evaluateGameState(gameState)==0)vari<-paste("Draw")
         cat("Game over\n")
         message(vari);if(exists("jj"))rm("jj")}
