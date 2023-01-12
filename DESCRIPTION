@@ -3,7 +3,7 @@ Type: Package
 Title: Playing Tic tac toe
 Version: 0.1.0
 Author: Thomas Maltesen
-Maintainer: Thomas Maltesen <mcl868@alumni.ku.dk>
+Maintainer: Thomas Maltesen <thomas.maltesen@protonmail.com>
 Description: Playing TicTacToe.
 URL: https://github.com/mcl868/TicTacToe.git
 License: GPL (>= 3)
